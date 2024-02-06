@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    
+
+</head>
+<body>
+
+   <script src="assets/js/main.js"></script>
+  
+   
+    <header class="header" id="header">
+       <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+            <h4>Ngô Đức Anh</h4>
+        </a>
+   
+
+       <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list"> 
+            <li class="nav__item">
+                <a href="#infoDiv1" onclick="scrollToTarget('infoDiv1')"  class="nav__link active-link">Home</a>
+            </li>
+
+            <li  class="nav__item">
+                <a href="#infoDiv2" onclick="scrollToTarget('infoDiv2')"  class="nav__link">
+                    About
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#infoDiv3" onclick="scrollToTarget('infoDiv3')"  class="nav__link">
+                   Portfolio
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a  href="#infoDiv4" onclick="scrollToTarget('infoDiv4')" class="nav__link">
+                    Moment
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a  href="#infoDiv5" onclick="scrollToTarget('infoDiv5')" class="nav__link">
+                    Experience
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#infoDiv6" onclick="scrollToTarget('infoDiv6')"  class="nav__link">
+                    Contact
+                </a>
+            </li>
+
+            <div class="nav__close" id="nav-close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div class="menu-toggle" >
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </ul>
+       </div>
+</nav>
+
+    </header>
+
+    <main class="main">
+
+        <section class="home container" id="infoDiv1" >
+            <div class="home__container grid">
+                <div class="home__data">
+                    <h3 class="home__subtitle"> Hello</h3>
+                    <h1 class="home__title"> It's Duc Anh</h1>
+                   <div class="home__buttons">
+                    <span>Developer</span>
+                   </div>
+
+                </div>
+                  
+                  <div id="slide-container">
+                    <div class="slide fade">
+                      <img src="assets/img/logo.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide fade">
+                      <img src="assets/img/anh 3.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide fade">
+                      <img src="assets/img/anh 13.jpg" alt="Slide 3">
+                    </div>
+                    <!-- Thêm các slide khác nếu cần -->
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                  </div>
+        
+
+            <div class="home__group grid">
+                <div class="home__details">
+                    <p class="home__description">Tôi đang trên con đường trở thành 1 lập trình viên  </p>
+                    <p class="home__description" style="font-size: 20px;">Có tất cả sự nhiệt huyết cháy bỏng khát vọng của tuổi trẻ để vươn tới thành công trong tương lai  </p>
+                </div>
+
+            </div> 
+
+            <div class="home__social">
+                <span class="home__social-follow">Follow me on</span>
+
+                <div class="home__social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100039274450241&mibextid=LQQJ4d" class="home__social-link" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    
+                    <span>Facebook</span>
+
+                    </a>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fducanhh098%3Figsh%3DMXY4MGgzbnF2Y2lnZw%253D%253D%26utm_source%3Dqr%26fbclid%3DIwAR0ptK8bvmDgw8O0O7Aqo7M1iOkVyQMMGbvfIInUxeqdEPXeT-CgO1SkxnI&h=AT0psQhYn6wgguT74SgRDDYzkjgLy5q4mvngnnBYECCUhB1cTrqd26JNOZxzDwdkKe4x3J-KCv2XH003sxS8ZpHzkHDgxXmGmaQt97X_3rEz2M5kJJh_Ap4THzg4bBMU2UgDodDxA7MqinKZ1oztdA" class="home__social-link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    
+                    <span>Instagram</span>
+                    </a>
+
+                    <a href="" class="home__social-link" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                    
+                    <span>Link more</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about section" id="infoDiv2">
+            <div class="about__container container grid">
+                <img src="assets/img/anh 3.jpg" alt="" class="about img" width="600px" height="600px">
+
+                <div class="about__data">
+                    <span class="section__subtitle about__subtitle">My Intro</span>
+                    <h2 class="section__title about__title">About Me</h2>
+
+                    <p class="about__description">Tôi tên Ngô Đức Anh, 18 tuổi, đến từ Hà Nội, hiện là sinh viên năm 2 ngành Công nghệ thông tin tại trường Đại học Thủ Đô</p>
+                    <p class="about__details"> Tôi là người ham đọc sách, thích học hỏi và hướng ngoại. Tôi thích làm việc trong môi trường nghiêm túc và có thể phát triển sự nghiệp. Tôi tin rằng với những gì tôi đã tích lũy được trong thời gian học tập cũng như qua các hoạt động xã hội, tôi có thể đảm nhận được vị trí 
+                       phù hợp trong tương lai.</p>
+                       <p class="about__testemonials">Testemonial</p>
+                    <div class="about__award grid">
+                       
+                    <img src="assets/img/anh 4.jpg" alt="" class="award__img" width="70px" height="70px"> 
+                   
+                <div>
+                <h3 class="award__title"> Thế Duy</h3>
+                <p class="award__details"> Mình cảm tháy Đức Anh là một người nhạy bén rất nghiêm túc trong việc nghiên cứu học tập của mình</p>
+                </div>
+
+                <img src="assets/img/anh 10.jpg" alt="" class="award__img" width="70px" height="70px"> 
+                   
+                <div>
+                <h3 class="award__title"> Đài Nguyễn</h3>
+                <p class="award__details"> Trong công việc hay hoc tập cậu ấy luôn chủ động tìm tòi cùng với ý thức tốt sẽ giúp cậu ấy tiến bộ hơn mỗi ngày</p>
+                </div>
+
+                <img src="assets/img/anh 9.jpg" alt="" class="award__img" width="70px" height="60px"> 
+                   
+                <div>
+                <h3 class="award__title"> Đăng Anh Trần </h3>
+                <p class="award__details"> Cậu bạn này rất thú vị mỗi khi nhìn cậu ấy là tôi lại muốn lao đầu vào học để có thể vượt lên .....</p>
+                </div>
+                
+
+                </div> 
+            </div>
+</div>
+        </section>
+
+        <section class="services section" id="infoDiv3">
+            <span class="section__subtitle">My portfolio</span>
+            <h2 class="section__title">Homework</h2>
+
+            <div class="services__container container grid">
+                <div class="services__tab">
+                    <div>
+                        <h3 class="services__button services__active" data-target="#Developer__web">Buổi 1/ Buổi 2</h3>
+                    </div>
+                    <div>
+                        <h3 class="services__button" data-target="#Build__app">Buổi 3/ Buổi 4</h3>
+                    </div>
+                    <div>
+                        <h3 class="services__button" data-target="#Produce__hardware">Buổi 5/ Buổi 6</h3>
+                    </div>
+                    <div>
+                        <h3 class="services__button" data-target="#Mobile__dev">Buổi 7</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="services__content">
+                    <div class="services__group services__active" data-content id="Developer web">
+                        <div class="services__item grid">
+                            <div class="baitap">
+                                <span>Buoi1 :</span>
+                                <a class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%201/bai%201.html">Bai1 </a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%201/bai2.1.html">Bai 2.1 </a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%201/bai2.2.html">Bai 2.2 </a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%201/bai2.3.html">Bai 2.3 </a>
+                            </div>
+
+                            <div class="baitap">
+                                <span>Buoi 2</span>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai2.1.html">Bai 1 </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai2.html">Bai 2 </a>
+                                <a href=" https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai2.2.html"> Bai 2.1 </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai2.2.html"> Bai 2.2 </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai3.2.html"> Bai 3.2 </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%202/bai4.html">Bai 4 </a>
+                            </div>
+                    </div>
+                    </div>
+
+                    <div class="services__group" data-content id="Build__app">
+                        <div class="services__item grid">
+                            <div class="baitap">
+                                <span>Buoi 3 </span>
+                                <a class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/bai1.html">Bai1</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/trangchu.html">Bai 2</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/b3bai2%20(1).html">Bai 2.2</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/b3bai2%20(1).html">Bai 3</a>
+                            </div>
+
+                            <div class="baitap">
+                                <span>Buoi 4</span>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai1.html">Bai 1</a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai3.html">Bai 2</a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai4.html"> Bai 3  </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai5.html"> Bai 4</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__group" data-content id="Produce">
+                        <div class="services__item grid">
+                            <img src="assets/img/logo.jpg" alt="" class="services__img">
+
+                            <div class="baitap">
+                                <span>Buoi 3 </span>
+                                <a class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/bai1.html">Bai1</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/trangchu.html">Bai 2</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/b3bai2%20(1).html">Bai 2.2</a>
+                                <a  class="" href="https://ducanh098.000webhostapp.com/bai%20tap/buoi%203/b3bai2%20(1).html">Bai 3</a>
+                            </div>
+
+                            <div class="baitap">
+                                <span>Buoi 4</span>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai1.html">Bai 1</a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai3.html">Bai 2</a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai4.html"> Bai 3  </a>
+                                <a href="https://ducanh098.000webhostapp.com/bai%20tap/buoi4/bai5.html"> Bai 4</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="services__group" data-content id="Mobile__dev">
+                        <div class="services__item grid">
+                            <img src="assets/img/anh web1.jpg" alt="" class="services__img">
+
+                            <div class="services__data">
+                                <h3 class="services__title">There are the web development </h3>
+                                <p class="services__details">Also known as web programmers or coders, web developers fundamentally make a website work by building the site’s functionality, interactivity, and visible structure, generally based on the conception of designers and other significant roles.
+
+                                    Web developers also ensure that a site functions well on all browsers – desktop and mobile – through testing. Once a site is live, a developer updates other maintenance tasks as and when required.
+                                    
+                                     </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+        <section class="work__section" id="infoDiv4">
+            <span class="section__subtitle"> My services</span>
+            <h2 class="section__title"> Moment of my life</h2>
+
+            <div class="work__container container">
+                <div class="work__content">
+                    <img src="assets/img/anh 10.jpg" alt="" class="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 11.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 3.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 9.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 12.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 13.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 2.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 9.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/logo.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 14.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/logo.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+
+                <div class="work__content">
+                    <img src="assets/img/anh 10.jpg" alt="">
+                    <div class="work__overlay"></div>
+                    <i class="fa-solid fa-camera work__overlay-icon"></i>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section class="project section targetElement5">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <h2 class="project__title">Muon lam viec cung toi</h2>
+                    <p class="project__description"> Toi luon san sang de lam viec cung voi ban</p>
+                    <button class="button"> Hire me</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience section experience" id="infoDiv5">
+            <span class="section__subtitle">My journey</span>
+            <h2 class="section__title">My experience</h2>
+
+            <div class="qualification__container container grid">
+                <div class="experience">
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i> 2022-now
+                            </span>
+                             <h3 class="timeline__title">Đại học Thủ Đô Hà Nội</h3>
+                             <p class="timeline__text"> Trường Đại học Thủ đô Hà Nội được nhìn nhận là một trong những trường đào tạo uy tín, chất lượng với đội ngũ giảng viên có chuyên môn cao, cơ sở vật chất khang trang, sạch đẹp, ký túc xá hiện đại và mức giá học phí vừa phải.</p>
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i>2019-2022
+                            </span>
+                             <h3 class="timeline__title">Trường trung học phổ thông Trần Hưng Đạo-tx</h3>
+                             <p class="timeline__text"> Một môi trường cấp 3 mặc dù không cần quá nhiều điểm để đỗ vào trường nhưng chất lượng cũng như đội ngũ giáo viên khiến em chọn môi trường này </p>
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i>2015-2019
+                            </span>
+                             <h3 class="timeline__title">Trường trung học cơ sở khương đình</h3>
+                             <p class="timeline__text"> Tuổi thơ của em gắn liền với môi trường cấp 2 tại đây trường đạt chuẩn giáo trình dạy học chất lượng cùng với đội ngũ giáo viên kinh nghiệm khiến trường trở thành điểm sáng trong quận</p>
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">2022-2024
+                            </span>
+                             <h3 class="timeline__title">Thiết kế web</h3>
+                             <p class="timeline__text"> Đây là một môn học mà em mới được tiếp cần từ năm 2 và hiện tại đang làm bài tập lớn cho học phần này với sự giảng dạy của cô Phương , học phần này khiến em hiểu rõ được bản chất về web cách tạo font end back end làm những dự án nhỏ khác nhau để tích lũy trau dồi kiến thức xậy dựng dự án lớn hơn trong tương lai gần </p>
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar">2022-2023</i>
+                            </span>
+                             <h3 class="timeline__title">Cấu trúc dữ liệu và giải thuật</h3>
+                             <p class="timeline__text"> Đây là 1 môn rất quan trọng trong lập trình đối với tất cả nhưng người theo ngành công nghệ thông tin nhưng với sự hỗ trợ giảng dạy của thầy Tùng khiến học phần này cũng giảm đi đôi chút sự khó khăn vì nhiệt huyết tâm đắc trong từng bài giảng của thầy khiến sinh viên trở nên yêu thích môn hoc hơn</p>
+
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <span class="timeline__date">
+                                <i class="fa-solid fa-calendar"></i>2022-2023
+                            </span>
+                             <h3 class="timeline__title">Cơ sở dữ diệu</h3>
+                             <p class="timeline__text">Mặc dù em chưa học môn này do đăng kí thiếu tín chỉ nhưng em thấy các bạn cũng đang phải vất vả để làm bài tập lớn điều này khiến em cảm thấy lo lắng cho bản thân khi phải học bù hoc phần này...</p>
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact section" id="infoDiv6">
+            <span class="section__subtitle"></span>
+            <h2 class="section__title">Contact me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <form action="" class="contact__form" id="myForm" onsubmit="return validateForm()">
+                        <div class="contact__form-group">
+                            <div class="contact__form-div">
+                                <label for="name" class="contact__form-tag" id="name" name="name" >Name</label>
+                                <input type="text" class="contact__form-input" 
+                                placeholder="Insert your Name" id="name">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="email" class="contact__form-tag" id="email" name="email">Mail</label>
+                                <input type="text" class="contact__form-input" 
+                                placeholder="Insert your Email" id="email">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag" id="subject" name="subjet">Subject</label>
+                                <input type="text" id="subject" class="contact__form-input" 
+                                placeholder="Insert yout Subject">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag" id="message" name="message">Messages</label>
+                                <textarea name="" id="message" cols="30" rows="10"
+                                class="contact__form-input" placeholder="Write your Messeages"></textarea>
+                            </div>
+
+                            <button class="button" value="submit"> Send messages</button> 
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="contact__info">
+                    <div class="contact__card">
+                        <div>
+                            <i class="fa-solid fa-location-dot contact__icon" ></i>
+                            <h3 class="contact__card-title">Địa chỉ nhà: </h3>
+                        </div>
+
+                        <span class="contact__card-data">Số 20 ngách 99/110 Định Công Hạ Hoàng Mai Hà Nội </span>
+                    </div>
+
+                    <div class="contact__card">
+                        <div>
+                            <i class="fa-solid fa-mobile contact__icon"></i>
+                            <h3 class="contact__card-title">Liên hệ: </h3>
+                        </div>
+
+                        <span class="contact__card-data">0382269804</span>
+                    </div>
+
+                    <div class="contact__card">
+                        <div>
+                            <i class="fa-solid fa-envelope contact__icon"></i>
+                            <h3 class="contact__card-title">Email: </h3>
+                        </div>
+
+                        <span class="contact__card-data">duc.anh09082004@gmail.com</span>
+                    </div>
+
+                    <div class="home__social-links">
+                        <a href="" class="home__social-link" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        
+                        <span>Follow me</span>
+    
+                        </a>
+                        <a href="" class="home__social-link" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        
+                        <span>Call me</span>
+                        </a>
+    
+                        <a href="" class="home__social-link" target="_blank">
+                            <i class="fa-solid fa-link"></i>
+                        
+                        <span>Link more</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </main>
+
+    <div class="lightbox ">
+        <div class="lightbox__content">
+            <div class="lightbox__close"> &times;</div>
+            <img src="assets/img/anh web1.jpg" alt="" class="lightbox__img">
+            <div class="lightbox__caption">
+                <div class="caption__counter">1 of 12</div>
+            </div>
+        </div>
+
+        <div class="lightbox__controls">
+            <div class="prev__item" onclick="prevItem()"> <i class="fa-solid fa-caret-left"></i></div>
+            <div class="next__item" onclick="nextItem()"> <i class="fa-solid fa-caret-right"></i></div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Duc Anh</h1>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="" class="footer__link">About</a>
+                </li>
+
+                <li>
+                    <a href="" class="footer__link">Project</a>
+                </li>
+
+                <li>
+                    <a href="" class="footer__link">Testimonials</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">since2023;ngoducanh: All right reserved</span>
+
+        </div>
+
+    </footer>
+
+
+   
+    
+</body>
+</html>
